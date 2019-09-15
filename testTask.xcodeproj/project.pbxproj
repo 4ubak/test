@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		221432E8232E3E1E00A10B11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221432E7232E3E1E00A10B11 /* AppDelegate.swift */; };
-		221432EA232E3E1E00A10B11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221432E9232E3E1E00A10B11 /* ViewController.swift */; };
+		221432EA232E3E1E00A10B11 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221432E9232E3E1E00A10B11 /* MainTabController.swift */; };
 		221432ED232E3E1E00A10B11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221432EB232E3E1E00A10B11 /* Main.storyboard */; };
 		221432EF232E3E2000A10B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 221432EE232E3E2000A10B11 /* Assets.xcassets */; };
 		221432F2232E3E2000A10B11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221432F0232E3E2000A10B11 /* LaunchScreen.storyboard */; };
+		221432FA232E3E7100A10B11 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221432F9232E3E7100A10B11 /* CollectionViewController.swift */; };
+		221432FF232E3FC900A10B11 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221432FE232E3FC900A10B11 /* ImageCollectionViewCell.swift */; };
+		22143302232E403400A10B11 /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22143301232E403400A10B11 /* ViewExt.swift */; };
+		22143304232E429E00A10B11 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22143303232E429E00A10B11 /* TableViewController.swift */; };
+		22143306232E4A1A00A10B11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22143305232E4A1A00A10B11 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		221432E4232E3E1E00A10B11 /* testTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		221432E7232E3E1E00A10B11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		221432E9232E3E1E00A10B11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		221432E9232E3E1E00A10B11 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		221432EC232E3E1E00A10B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		221432EE232E3E2000A10B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		221432F1232E3E2000A10B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		221432F3232E3E2000A10B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		221432F9232E3E7100A10B11 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		221432FE232E3FC900A10B11 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		22143301232E403400A10B11 /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
+		22143303232E429E00A10B11 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		22143305232E4A1A00A10B11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,43 @@
 		221432E6232E3E1E00A10B11 /* testTask */ = {
 			isa = PBXGroup;
 			children = (
+				22143300232E402A00A10B11 /* Extensions */,
+				221432FB232E3F8000A10B11 /* VC */,
 				221432E7232E3E1E00A10B11 /* AppDelegate.swift */,
-				221432E9232E3E1E00A10B11 /* ViewController.swift */,
 				221432EB232E3E1E00A10B11 /* Main.storyboard */,
 				221432EE232E3E2000A10B11 /* Assets.xcassets */,
 				221432F0232E3E2000A10B11 /* LaunchScreen.storyboard */,
 				221432F3232E3E2000A10B11 /* Info.plist */,
 			);
 			path = testTask;
+			sourceTree = "<group>";
+		};
+		221432FB232E3F8000A10B11 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				221432FD232E3FB800A10B11 /* Cell */,
+				221432E9232E3E1E00A10B11 /* MainTabController.swift */,
+				221432F9232E3E7100A10B11 /* CollectionViewController.swift */,
+				22143303232E429E00A10B11 /* TableViewController.swift */,
+				22143305232E4A1A00A10B11 /* ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		221432FD232E3FB800A10B11 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				221432FE232E3FC900A10B11 /* ImageCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		22143300232E402A00A10B11 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				22143301232E403400A10B11 /* ViewExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				221432EA232E3E1E00A10B11 /* ViewController.swift in Sources */,
+				221432FA232E3E7100A10B11 /* CollectionViewController.swift in Sources */,
+				22143304232E429E00A10B11 /* TableViewController.swift in Sources */,
+				221432EA232E3E1E00A10B11 /* MainTabController.swift in Sources */,
+				22143302232E403400A10B11 /* ViewExt.swift in Sources */,
+				22143306232E4A1A00A10B11 /* ViewController.swift in Sources */,
+				221432FF232E3FC900A10B11 /* ImageCollectionViewCell.swift in Sources */,
 				221432E8232E3E1E00A10B11 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
